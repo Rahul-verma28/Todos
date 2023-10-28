@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #bbe3f8 0%, #62d1f6 100%);
+    max-width: 100vw;
+    font-family: arial;
+
+}
+
+form {
+    width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 2px solid rgb(99, 200, 233);
+    border-radius: 12px;
+    background: white;
+    display: flex-cloumn;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12), 0 5px 12px rgba(0, 0, 0, 0.24);
+}
+
+input,
+textarea {
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.177);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: arial;
+    margin: 10px 0;
+    outline: none;
+    background-color: transparent;
+    max-height: 50px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+button {
+    border: 1px solid blue;
+    border-radius: 6px;
+    padding: 8px;
+    width: 200px;
+    margin: 10px 0 0;
+    background: rgb(81, 196, 245);
+    color: white;
+
+}
+
+.edit{
+    background: rgb(5, 178, 252) !important;
+    margin-left: 10px;
+}
+
+.container {
+    max-width: 100vw;
+    margin: 0 50px;
+}
+
+.container button {
+    width: auto;
+    border: none;
+    background: rgb(245, 81, 141);
+
+}
+
+.todoRow {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 30px;
+    margin-bottom: 50px;
+
+}
+
+.todoCol {
+    line-height: 1.6;
+    margin: 10px 0 0;
+    padding: 20px;
+    border: 1px solid rgb(99, 200, 233);
+    border-radius: 12px;
+    background: white;
+    display: flex-cloumn;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12), 0 5px 12px rgba(0, 0, 0, 0.24);
+}
+
+.todoCol p, textarea{
+    font-size: .8rem;
+    color: rgb(87, 86, 86);
+}
+
+@media screen and (max-width: 800px) {
+
+    .todoRow {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    form {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .todoRow {
+        grid-template-columns: auto;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    button{
+        width:100px;
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    padding: 25px 0;
+    position:-webkit-sticky;
+    position:sticky;
+    bottom:0;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <form onsubmit="return false">
+        <h2 class='fw-bold'>Add a todo list</h2>
+        <input id="tittle" type="text" placeholder="Tittle">
+        <textarea id="content" rows="3"
+            placeholder="content"></textarea>
+        <button onclick="addTodo()" id="creatbtn" type="submit">Creat</button>
+    </form>
+    <div class="container">
+        <h2 id="todoheading" >Todo items</h2>
+        <div id="todoRow" class="todoRow">
+            
+        </div>
+    </div>
+    <footer>
+        copyright claim, A todo list site @Rahul verma
+    </footer>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
